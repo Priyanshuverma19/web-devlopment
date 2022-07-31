@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar' 
+            'section section section aside'
+            'footer footer footer footer';
+            
+
+            
+        }
+    .box{
+        background-color: rgb(165, 165, 39);
+        border: 2px solid black;
+
+
+    }
+    #navbar{
+        grid-area: navbar; 
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area: aside;
+    } 
+    footer{
+        grid-area: footer;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar "class="box">
+             Home About Contect us
+        </div>
+        <!-- <div id="section "class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique assumenda et minus voluptas ab, pariatur ipsa blanditiis qui consequatur officia.</div> -->
+        <!-- <div id="aside "class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, magni distinctio, eveniet possimus reiciendis deserunt rerum exercitationem obcaecati eaque ex sunt non aliquam laboriosam. Autem natus deleniti temporibus dolor laboriosam.</div> -->
+        <footer class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia nobis amet enim impedit?</footer>
+        <!-- <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div> -->
+        <!-- <div class="box">item-7</div>
+        <div class="box">item-8</div>
+        <div class="box">item-9</div>
+        <div class="box">item-10</div>
+        <div class="box">item-11</div> 
+        <div class="box">item-12</div>
+        <div class="box">item-13</div>
+        <div class="box">item-14</div> -->
+    </div>
+    
+</body>
+</html>
